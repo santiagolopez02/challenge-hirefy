@@ -46,7 +46,7 @@ const App = ({ countries }) => {
           <GoSearch className="text-[27px] absolute left-4 top-4 text-white" />
         </div>
 
-        <div className="w-full flex flex-col justify-center items-start xl:grid xl:grid-cols-4 gap-4 bg-transparent">
+        <div className="w-full h-full flex flex-col justify-center items-start xl:grid xl:grid-cols-4 gap-4 bg-transparent">
           {dataCountries?.map((item, index) => (
             <Card
               key={index}
