@@ -15,11 +15,11 @@ export const client = new ApolloClient({
 
 function MyApp({ countries }) {
   return (
-    <>
+    <div className="bg-grayCustom h-screen">
       <ApolloProvider client={client}>
         <App countries={countries} />
       </ApolloProvider>
-    </>
+    </div>
   );
 }
 
@@ -40,7 +40,7 @@ export async function getServerSideProps() {
       languages: item?.languages?.map((i) => i?.name) || null,
     };
   });
-  console.log(countries);
+
   return {
     props: {
       countries,

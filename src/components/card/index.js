@@ -12,7 +12,6 @@ const Card = ({
   currency = [],
   languages = [],
 }) => {
-  console.log(states);
   return (
     <div className="w-full bg-graydark rounded-[20px] border-[2px] border-gray py-[30px] px-[31px] flex flex-col justify-between items-start h-[268px] sm:h-[256px]">
       <div className="flex flex-row items-center gap-3">
