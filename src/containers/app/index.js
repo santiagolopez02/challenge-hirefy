@@ -33,8 +33,8 @@ const App = ({ countries }) => {
   }, [page]);
 
   return (
-    <div className=" w-full h-auto flex flex-col justify-start items-center bg-gradient-to-r from-opaqueskyblue via-graydark to-violet">
-      <div className="w-3/4 flex flex-col justify-center items-center mt-[60px] sm:mt-[100px]">
+    <div className=" w-full h-full flex flex-col justify-start items-center ">
+      <div className="w-3/4 flex flex-col justify-center items-center pt-[60px] sm:pt-[100px]">
         <div className="relative mb-[40px]">
           <input
             type="text"
@@ -46,7 +46,7 @@ const App = ({ countries }) => {
           <GoSearch className="text-[27px] absolute left-4 top-4 text-white" />
         </div>
 
-        <div className="w-full flex flex-col justify-center items-start xl:grid xl:grid-cols-4 gap-4 bg-grayCustom">
+        <div className="w-full flex flex-col justify-center items-start xl:grid xl:grid-cols-4 gap-4 bg-transparent">
           {dataCountries?.map((item, index) => (
             <Card
               key={index}

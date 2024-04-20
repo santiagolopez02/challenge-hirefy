@@ -15,7 +15,7 @@ export const client = new ApolloClient({
 
 function MyApp({ countries }) {
   return (
-    <div className="bg-grayCustom h-screen">
+    <div className=" h-screen bg-gradient-to-tr from-opaqueskyblue via-graydark to-violet">
       <ApolloProvider client={client}>
         <App countries={countries} />
       </ApolloProvider>
