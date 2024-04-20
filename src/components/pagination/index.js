@@ -6,7 +6,7 @@ export default function PaginationBar({ currentPage, amount, setPage }) {
   const activeClass =
     " hover:border-white cursor-pointer text-white rounded-lg  mx-1 w-[34px] h-[34px] border-grayCustom  border-2 flex justify-center items-center font-bold  bg-graydark mx-1  border-grayCustom  ";
   const moreClass =
-    "hover:border-white bg-graydark text-white rounded-xl mx-1 pt-3 px-1 ";
+    "hover:border-white bg-graydark text-white rounded-xl w-[34px] h-[34px]  text-center border-grayCustom  ";
   const ButtonPage = ({ page }) => {
     return (
       <p

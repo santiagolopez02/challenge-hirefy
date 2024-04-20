@@ -2,6 +2,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import "tailwindcss/tailwind.css";
 import { GET_COUNTRIES } from "@/data/query/countries";
 import App from "@/containers/app";
+
 export const cache = new InMemoryCache({
   typePolicies: {
     Query: {},
@@ -31,7 +32,7 @@ export async function getServerSideProps() {
   });
   const countries = data?.countries?.map((item) => {
     return {
-      emoji: item.emoji,
+      emoji: item?.emojiU,
       name: item?.name,
       location: item?.continent?.name,
       states: item?.states?.length ? `${item?.states?.length} states` : null,

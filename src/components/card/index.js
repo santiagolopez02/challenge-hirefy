@@ -15,7 +15,7 @@ const Card = ({
   return (
     <div className="w-full bg-graydark rounded-[20px] border-[2px] border-gray py-[30px] px-[31px] flex flex-col justify-between items-start h-[268px] sm:h-[256px]">
       <div className="flex flex-row items-center gap-3">
-        <Avatar code={emoji} />
+        <Avatar unicodeFlag={emoji} />
         <div>
           <h1 className="font-bold text-[25px] leading-[30px] text-white">
             {name}

@@ -28,9 +28,6 @@ const App = ({ countries }) => {
     const indexLastCard = page * 12;
     const indexFirstCard = indexLastCard - 12;
     const currentCard = countries.slice(indexFirstCard, indexLastCard);
-    console.log(indexLastCard);
-    console.log(indexFirstCard);
-    console.log(currentCard);
     setDataCountries(currentCard);
   }, [page, countries]);
 
