@@ -33,7 +33,7 @@ const App = ({ countries }) => {
   }, [page]);
 
   return (
-    <div className="w-full h-auto flex flex-col justify-start items-center bg-grayCustom">
+    <div className="w-full h-auto flex flex-col justify-start items-center bg-gradient-to-r from-opaqueskyblue via-graydark to-violet">
       <div className="w-3/4 flex flex-col justify-center items-center mt-[60px] sm:mt-[100px]">
         <div className="relative mb-[40px]">
           <input
