@@ -27,10 +27,12 @@ const App = ({ countries }) => {
   useEffect(() => {
     const indexLastCard = page * 12;
     const indexFirstCard = indexLastCard - 12;
-    const currentCard = dataCountries.slice(indexFirstCard, indexLastCard);
-
+    const currentCard = countries.slice(indexFirstCard, indexLastCard);
+    console.log(indexLastCard);
+    console.log(indexFirstCard);
+    console.log(currentCard);
     setDataCountries(currentCard);
-  }, [page]);
+  }, [page, countries]);
 
   return (
     <div className=" w-full h-full flex flex-col justify-start items-center ">
