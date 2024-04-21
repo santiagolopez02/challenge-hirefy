@@ -20,6 +20,9 @@ const App = ({ countries }) => {
       );
     } else {
       filterArray = countries;
+      const indexLastCard = page * 12;
+      const indexFirstCard = indexLastCard - 12;
+      filterArray = countries.slice(indexFirstCard, indexLastCard);
     }
     setDataCountries(filterArray);
   }, [filter]);
