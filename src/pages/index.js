@@ -34,7 +34,7 @@ export async function getServerSideProps() {
     return {
       emoji: item?.emojiU,
       name: item?.name,
-      location: item?.continent?.name,
+      location: item?.capital,
       states: item?.states?.length ? `${item?.states?.length} states` : null,
       phone: "+" + item?.phone,
       currency: item?.currency?.split(",") || null,
