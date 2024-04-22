@@ -1,8 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+### Setting up Environment Variables
+
+Before running the project, you need to configure some environment variables. Create a `.env` file in the root of the project and add the following variables:
+
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_API_URL=https://countries.trevorblades.com/graphql
+
+## Install node modules
+
+Run command `npm install`
+
+npm install
+
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
